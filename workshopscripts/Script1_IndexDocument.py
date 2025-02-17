@@ -36,7 +36,7 @@ def index_document(file_path):
         "version": 1,
         "document": {
             "id": doc_id,
-            "           ": "gleanpartnerworkshop",
+            "datasource": "gleanpartnerworkshop",
             "viewURL": view_url,
             "title": "Glean Partner Workshop Example Document",
             "filename": "GleanPartnerWorkshop_Example_Document",
