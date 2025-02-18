@@ -4,6 +4,7 @@ import requests
 # Updated API configuration
 API_URL = "https://support-lab-be.glean.com/api/index/v1/indexdocument"
 INDEX_API_TOKEN = "<INDEX_API_TOKEN>"  # Replace with your Glean Indexing API token
+DATASOURCE = "<YOUR_DATASOURCE_NAME>" #Replace with your Glean datasource name
 
 def index_document(file_path):
     """
@@ -36,7 +37,7 @@ def index_document(file_path):
         "version": 1,
         "document": {
             "id": doc_id,
-            "datasource": "gleanpartnerworkshop",
+            "datasource": DATASOURCE,
             "viewURL": view_url,
             "title": "Glean Partner Workshop Example Document",
             "filename": "GleanPartnerWorkshop_Example_Document",
